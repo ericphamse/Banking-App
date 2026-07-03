@@ -7,7 +7,7 @@ import jakarta.validation.constraints.Size;
 public class RegisterRequest {
 
     @NotBlank
-    private String fullname;
+    private String fullName;
 
     @NotBlank @Email
     private String email;
@@ -16,8 +16,8 @@ public class RegisterRequest {
     @Size(min = 8)
     private String password;
 
-    public String getFullName() { return fullname; }
-    public void setFullName(String fullname) { this.fullname = fullname; }
+    public String getFullName() { return fullName; }
+    public void setFullName(String fullName) { this.fullName = fullName; }
 
     public String getEmail() { return email; }
     public void setEmail( String email ) { this.email = email; }
